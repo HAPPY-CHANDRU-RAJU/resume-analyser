@@ -1,0 +1,127 @@
+Resume generator
+
+http://nitish.site/resume-generator/
+
+Himanshu Mani Tripathi
+B.Tech undergraduate
+Computer Science and Engineering
+National Institute of Technology, Silchar
+
++91-9954964812
+himanshutripathi366@gmail.com
+https://github.com/0dust
+
+EDUCATION
+Degree/Certificate
+B.Tech
+Senior secondary
+Secondary
+
+Institute/Board
+National Institute of Technology, Silchar
+CBSE board
+ICSE board
+
+CGPA/Percentage
+Year
+9.09 (Current)
+2016 - Present
+95.2%
+2015
+87.4%
+2013
+
+PROJECTS
+Sentiment analysis with attention
+Analysed sentiments of wikipedia comments using LSTM with attention
+
+May 2016 - July 2016
+
+me.
+
+Dec 2015
+
+XYZ Engineer at 'ABC'
+Designed methods to improve the existing unit test mechanism.
+
+PROJECTS
+Keras Seq2Seq chatbot
+Analysed the sentiments of wikipedia comments using LSTM networks with attention
+mechanism.
+
+Ongoing
+
+Stack Overflow Developer Survey
+Performed analysis and visualization on stackoverflow 2018 developer survey data .
+
+Apr 2016
+
+Feb 2016
+goo.gl/link
+
+Sentiment analysis with attention
+Analysed the sentiments of wikipedia comments using LSTM with attention
+mechanism in keras.
+Project title
+Mentor name
+Graphical interface to share files over institute's network.
+
+Nov 2015
+github.com/link
+
+Project title
+Graphical interface to share files over institute's network.
+
+Aug 2015 - Sep 2015
+
+TECHNICAL SKILLS
+Programming languages : C++, Python, Java *
+Web technologies : HTML, CSS, Javascript
+Database management : mySQL
+Miscellaneous : Android programming *
+Operating system : Windows, Linux
+
+* Elementary proficiency
+
+POSITIONS OF RESPONSIBILITY
+XYZ Head, ABC 2016 (the annual XYZ of IIT Guwahati)
+City representative, New Delhi, ABC 2015
+
+ACHIEVEMENTS
+ABC contest 2016 : Secured 1st position in the National level contest.
+Joint Entrance Examination 2014 : Secured All India Rank 1 among 0.15 million candidates
+appearing for the test.
+KVPY 2013-14 : Obtained the National research fellowship scholarship by securing a position in top
+1%.
+ABC Olympiad 2014 : Qualified for the international stage by securing top position in following
+stages :
+1. Qualifiers stage : Bagged 20th position among 5000 candidates.
+2. National level : Bagged 7th position among 250 candidates.
+
+KEY COURSES TAKEN
+Computer lab
+
+Advanced calculus
+
+Process design
+
+XYZ architecture *
+
+Statistics *
+
+ABC lab *
+
+* To be completed in Nov 2016
+
+EXTRACURRICULARS
+ABC workshop : Attended a 3-day workshop on Image sensing satellite development.
+ABC contest 2016 : Secured 1st position in the National level contest.
+Upgrade to make advanced corrections
+4
+24
+
+1 of 1
+
+28/07/18, 12:59 AM
+
+
