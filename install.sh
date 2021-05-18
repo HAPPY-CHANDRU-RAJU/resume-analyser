@@ -1,4 +1,5 @@
 #!/bin/bash
+python3.9 uploader.py
 
 python3.9 preprocessing.py
 
@@ -18,3 +19,5 @@ cd ../
 touch result.json
 
 python3.9 main.py
+
+python3.9 finalplot.py

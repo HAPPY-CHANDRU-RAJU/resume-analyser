@@ -53,11 +53,11 @@ def compute_Education(iofilename):
 	#master = 32, bachelor = 26, diploma = 12
 	count  = 0
 	for j in Edu_List:
-		if (re.search("master", j) or re.search('\S+m-\S',j) ) and (tempScore < 98):
+		if (re.search("master", j) or re.search('\S+m-\S',j) ) and (count < 32):
 			count = 32
-		elif ( re.search("bachelor", j) or re.search('\S+b-\S',j) ) and (tempScore < 85):	
+		elif ( re.search("bachelor", j) or re.search('\S+b-\S',j) ) and (count < 26):	
 			count = 26
-		elif (re.search("diploma", j) or re.search('dip',j) or re.search('\S+m.\S',j)) and (tempScore < 75):
+		elif (re.search("diploma", j) or re.search('dip',j) or re.search('\S+m.\S',j)) and (count < 12):
 			count = 12
 			
 	infile.close()
@@ -157,7 +157,6 @@ def main():
 			"""
 			infile = open(iofilename)
 			temp = json.load(infile)
-			ids = temp["id"]
 			print("\nFile Name : {}".format(filelist))
 			bar = Bar('Analysing', max=3)
 			for i in range(3):
@@ -169,7 +168,7 @@ def main():
 				time.sleep(random.randint(2,5))
 			print("Completed....")
 			print("Score : {}".format(sum+40))
-			FileScore[filelist] = [ids,sum+40]
+			FileScore[filelist] = [temp["id"],temp["name"],sum+40]
 
 	#preprocessing 
 	sorted_x = sorted(FileScore.items(), key=lambda kv: kv[1])
