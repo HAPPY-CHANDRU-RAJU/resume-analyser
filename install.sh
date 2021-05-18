@@ -9,8 +9,12 @@ do
   pdftotext -enc UTF-8 $f
 done
 
-mv -v *.txt ../txt-data/
+echo "Converting...."
 
+
+mv *.txt ../txt-data/
 cd ../
+
+touch result.json
 
 python3.9 main.py

@@ -90,7 +90,9 @@ def convert_to_json():
                     if re.findall('\S+@\S+', w): 
                         lst = re.findall('\S+@\S+', w)
 
-            Did = "1HCR21EG{}".format(ids) 
+            Did = "1HCR21EG{}".format(ids) #id generator
+
+            #json for resume data
             resume_json = {
                 "id": Did,
                 "name": datas[0].strip().upper(),

@@ -1,13 +1,10 @@
-import os
-import json
-import sys
-import re
-import tqdm
-import time
-import random
+import os, json, sys
+import re, tqdm, time, random
 from io import StringIO
 from progress.bar import Bar
+import collections
 
+#labels
 section = {'Projects':["projects"],'Education':["education"],'Experience':["work experience  "],'Skills':["computer skills ","skills"]}
 
 AllSection = ["projects","education","work experience  ","computer skills ","skills"]
@@ -53,30 +50,16 @@ def compute_Education(iofilename):
 		if i.strip() in Edu_List:
 			Edu_List.remove(i.strip())
 
-	#master = 98, bachelor = 85, diploma = 75
-	tempScore = 0
+	#master = 32, bachelor = 26, diploma = 12
+	count  = 0
 	for j in Edu_List:
 		if (re.search("master", j) or re.search('\S+m-\S',j) ) and (tempScore < 98):
-			tempScore = 98
-			continue
+			count = 32
 		elif ( re.search("bachelor", j) or re.search('\S+b-\S',j) ) and (tempScore < 85):	
-			tempScore = 85
-			continue
+			count = 26
 		elif (re.search("diploma", j) or re.search('dip',j) or re.search('\S+m.\S',j)) and (tempScore < 75):
-			tempScore = 75
-			continue
-
-	count  = 0
-
-	if tempScore == 98:
-		count = 32
-	elif tempScore == 85:
-		count = 26
-	elif tempScore == 75:
-		count = 12
-	else:
-		count = 0
-
+			count = 12
+			
 	infile.close()
 	return count
 
@@ -155,6 +138,7 @@ def compute_Skills(iofilename):
 
 def main():
 	#json reading
+
 	for filelist in os.listdir(os.getcwd()+"/processed"):
 		with open(os.path.join(os.getcwd()+"/processed/"+filelist),"r", errors='ignore') as rf:
 			
@@ -169,7 +153,11 @@ def main():
 			for i in tqdm.tqdm(range(3)):
 				time.sleep(random.randint(2,5))
 				sum += task[i](iofilename)
+
 			"""
+			infile = open(iofilename)
+			temp = json.load(infile)
+			ids = temp["id"]
 			print("\nFile Name : {}".format(filelist))
 			bar = Bar('Analysing', max=3)
 			for i in range(3):
@@ -180,10 +168,15 @@ def main():
 			for i in tqdm.tqdm(range(1)):
 				time.sleep(random.randint(2,5))
 			print("Completed....")
-
 			print("Score : {}".format(sum+40))
-			FileScore[filelist] = sum+40
+			FileScore[filelist] = [ids,sum+40]
 
+	#preprocessing 
+	sorted_x = sorted(FileScore.items(), key=lambda kv: kv[1])
+	FileScorex = collections.OrderedDict(sorted_x)
+
+	#exporting
+	with open(os.path.join(os.getcwd()+"/result.json"), "w") as output_file:
+		json.dump(FileScorex, output_file, indent = 2, ensure_ascii = False)
 
 main()
-#print(FileScore)
