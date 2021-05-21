@@ -1,0 +1,98 @@
+User Your Application Submitted Successfully 
+----------------------------------RESUME-------------------------------------------
+Successfully
+]0;firejail /usr/bin/pdftotext -enc UTF-8 john_smith.pdf ]0;firejail /usr/bin/pdftotext -enc UTF-8 Layla_Martin_Resume.pdf ]0;firejail /usr/bin/pdftotext -enc UTF-8 resume_Meyer.pdf ]0;firejail /usr/bin/pdftotext -enc UTF-8 resume.pdf ]0;firejail /usr/bin/pdftotext -enc UTF-8 sample-corporate-with-style-resume.pdf ]0;firejail /usr/bin/pdftotext -enc UTF-8 sample-modern-contemporary-resume.pdf ]0;firejail /usr/bin/pdftotext -enc UTF-8 sample-smart-and-secure-resume.pdf ]0;firejail /usr/bin/pdftotext -enc UTF-8 sample-the-seeker-resume.pdf ]0;firejail /usr/bin/pdftotext -enc UTF-8 temp.pdf Converting....
+
+File Name : resume.json
+Completed....
+Score : 57
+
+File Name : sample-the-seeker-resume.json
+Completed....
+Score : 77
+
+File Name : sample-corporate-with-style-resume.json
+Completed....
+Score : 77
+
+File Name : sample-smart-and-secure-resume.json
+Completed....
+Score : 77
+
+File Name : sample-modern-contemporary-resume.json
+Completed....
+Score : 77
+
+File Name : john_smith.json
+Completed....
+Score : 81
+
+File Name : Layla_Martin_Resume.json
+Completed....
+Score : 87
+
+File Name : resume_Meyer.json
+Completed....
+Score : 87
+
+File Name : temp.json
+Completed....
+Score : 87
+
+
+Resume Scores : 
+------------------------------------------------------------------
+
+ Id : 1HCR21EG400	Name : HIMANSHU MANI TRIPATHI  
+ Score:57%
+ Resume File : data/resume.json
+
+------------------------------------------------------------------
+
+ Id : 1HCR21EG401	Name : RAM KUMAR  
+ Score:77%
+ Resume File : data/sample-the-seeker-resume.json
+
+------------------------------------------------------------------
+
+ Id : 1HCR21EG402	Name : RAM KUMAR  
+ Score:77%
+ Resume File : data/sample-corporate-with-style-resume.json
+
+------------------------------------------------------------------
+
+ Id : 1HCR21EG403	Name : RAM  
+ Score:77%
+ Resume File : data/sample-smart-and-secure-resume.json
+
+------------------------------------------------------------------
+
+ Id : 1HCR21EG404	Name : RAM KUMAR  
+ Score:77%
+ Resume File : data/sample-modern-contemporary-resume.json
+
+------------------------------------------------------------------
+
+ Id : 1HCR21EG405	Name : JOHN SMITH  
+ Score:81%
+ Resume File : data/john_smith.json
+
+------------------------------------------------------------------
+
+ Id : 1HCR21EG406	Name : LAYLA MARTIN  
+ Score:87%
+ Resume File : data/Layla_Martin_Resume.json
+
+------------------------------------------------------------------
+
+ Id : 1HCR21EG407	Name : MONICA MEYER  
+ Score:87%
+ Resume File : data/resume_Meyer.json
+
+------------------------------------------------------------------
+
+ Id : 1HCR21EG408	Name : MONICA MEYER  
+ Score:87%
+ Resume File : data/temp.json
+
+------------------------------------------------------------------
